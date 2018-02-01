@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { removeExpense } from '../actions/expenses';
+import { Link } from 'react-router-dom';
 
 const ExpenseListItem = ({id, description, amount, note, createdAt, dispatch}) => (
   <div>
-    <p>Description: {description}</p>
+    <Link to={`/edit/${id}`}> <p>Description: {description}</p> </Link>
     <p>Amount: {amount / 100} GBP</p>
     {note && <p>Note: {note}</p>}
     <p>Created at: {createdAt}</p>

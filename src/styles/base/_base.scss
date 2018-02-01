@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+
 }
 
 body {
@@ -19,4 +20,8 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
+}
+
+.DateRangePicker *, .SingleDatePicker *, .DayPickerRangeController * {
+  box-sizing: border-box;
 }
