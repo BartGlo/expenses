@@ -4,7 +4,6 @@ import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } fro
 import 'react-dates/initialize';
 import {DateRangePicker} from 'react-dates';
 
-
 export class ExpenseListFilters extends Component{
   constructor(props){
     super(props);
